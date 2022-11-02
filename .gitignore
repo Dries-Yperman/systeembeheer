@@ -4,3 +4,4 @@
 
 !ssh/*
 !default/ssh
+!sshguard/*
