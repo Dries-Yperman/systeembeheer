@@ -6,3 +6,4 @@
 !default/ssh
 !sshguard/*
 !default/locale
+!scripts/*
