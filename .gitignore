@@ -8,3 +8,5 @@
 !default/locale
 !scripts/*
 !systemd/system/cleanup.*
+!systemd/system/rsync.service
+!rsyncd.*
