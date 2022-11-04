@@ -1,0 +1,10 @@
+[Unit]
+Description=Cleanup service timer
+
+[Timer]
+OnBootSec=0min
+OnCalendar=*:*:00
+Unit=cleanup.service
+
+[Install]
+WantedBy=multi-user.target

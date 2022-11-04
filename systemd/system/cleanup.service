@@ -1,0 +1,5 @@
+[Unit]
+Description=Run the cleanup script. Removes all the contents of the /etc/mrt directory
+
+[Service]
+ExecStart=/etc/scripts/systemd-cleanup.sh
