@@ -7,3 +7,4 @@
 !sshguard/*
 !default/locale
 !scripts/*
+!systemd/system/cleanup.*
