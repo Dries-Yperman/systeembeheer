@@ -2,4 +2,4 @@
 !*/
 !.gitignore
 
-!ssh/
+!ssh/*
