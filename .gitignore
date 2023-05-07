@@ -6,3 +6,4 @@
 !sshguard/*
 !default/locale
 !scripts/*
+!extra_exercises/*
