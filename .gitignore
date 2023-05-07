@@ -5,3 +5,4 @@
 !ssh/*
 !sshguard/*
 !default/locale
+!scripts/*
