@@ -4,3 +4,4 @@
 
 !ssh/*
 !sshguard/*
+!default/locale
