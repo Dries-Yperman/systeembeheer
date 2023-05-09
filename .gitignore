@@ -9,3 +9,4 @@
 !extra_exercises/*
 !sudoers
 !apt/apt.conf.d/*
+!systemd/system/static-arp.service
