@@ -11,3 +11,5 @@
 !apt/apt.conf.d/*
 !systemd/system/static-arp.service
 !ntp.conf
+!default/named
+!bind/*
