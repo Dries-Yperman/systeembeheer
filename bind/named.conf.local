@@ -6,3 +6,11 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
+zone "dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.dries-yperman.sb.uclllabs.be";
+	allow-transfer {
+		193.191.176.254; // ns1.uclllabs.be
+		193.191.177.4; // ns2.uclllabs.be
+	};
+};
