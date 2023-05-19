@@ -13,3 +13,4 @@
 !ntp.conf
 !default/named
 !bind/*
+!apache2/*
