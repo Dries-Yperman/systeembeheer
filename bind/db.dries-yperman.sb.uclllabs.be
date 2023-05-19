@@ -3,7 +3,7 @@
 ;
 $TTL	604800
 @	IN	SOA	ns.dries-yperman.sb.uclllabs.be. admin.dries-yperman.sb.uclllabs.be. (
-			      9		; Serial
+			     10		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -14,6 +14,7 @@ $TTL	604800
 	IN	NS	ns2.uclllabs.be.
 ; A records
 www	IN	A	193.191.177.149
+www1	IN	A	193.191.177.149
 ns	IN	A	193.191.177.149
 ns1     IN      A       192.191.176.254
 ns2     IN      A       192.191.177.4
