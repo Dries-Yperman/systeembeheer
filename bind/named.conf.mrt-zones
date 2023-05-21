@@ -1,0 +1,24 @@
+
+
+zone "foobar.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.foobar.dries-yperman.sb.uclllabs.be";
+};
+
+
+
+
+zone "subzonenu0ure.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzonenu0ure.dries-yperman.sb.uclllabs.be";
+};
+
+
+
+
+zone "subzonepei5tu.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzonepei5tu.dries-yperman.sb.uclllabs.be";
+};
+
+

@@ -1,0 +1,35 @@
+#!/bin/bash
+subdomain=$1
+origin='$ORIGIN'
+ttl='$TTL 300'
+auth='dries-yperman.sb.uclllabs.be'
+serial=$(cat /etc/bind/db.dries-yperman.sb.uclllabs.be | grep -P 'Serial' | grep -oP '\d+');
+nextSerial=$(($serial + 1))
+
+#Make subzone
+echo "zone \"$subdomain.$auth\" {
+	type master;
+	file \"/etc/bind/mrt-zones/db.$subdomain.$auth\";
+};
+" >> /etc/bind/named.conf.mrt-zones
+
+#Make SOA record
+echo "$ttl
+$origin $subdomain.$auth.
+@       IN      SOA     $subdomain.$auth. root.$auth. (
+       	                      1		; Serial
+               	            300         ; Refresh
+                            300         ; Retry
+                            300         ; Expire
+                          300 ) ; Negative Cache TTL
+;name servers
+        IN      NS      ns.$auth.
+ns      IN      A       193.191.177.149
+" > /etc/bind/mrt-zones/db.$subdomain.$auth
+
+#Add subdomain
+echo "$subdomain	IN      NS      ns.$auth." >> /etc/bind/db.$auth
+sed -i "s/$serial\t\t;\sSerial/$nextSerial\t\t; Serial/" /etc/bind/db.$auth
+
+#Restart named.service
+sudo systemctl restart named.service;

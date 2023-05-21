@@ -12,6 +12,8 @@
 !systemd/system/static-arp.service
 !ntp.conf
 !default/named
+bind/mrt-zones/*
+bind/named.conf.mrt-zones
 !bind/*
 !apache2/*
 !apache2/sites-available/*

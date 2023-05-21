@@ -23,3 +23,5 @@ zone "milo-claes.sb.uclllabs.be" {
 	file "db.milo-claes.sb.uclllabs.be";
 	masters { 193.191.177.193; };
 };
+
+include "/etc/bind/named.conf.mrt-zones";

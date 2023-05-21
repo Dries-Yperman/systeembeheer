@@ -3,7 +3,7 @@
 ;
 $TTL	300
 @	IN	SOA	ns.dries-yperman.sb.uclllabs.be. root.dries-yperman.sb.uclllabs.be. (
-			     12		; Serial
+			     22		; Serial
 			    300		; Refresh
 			    300		; Retry
 			    300		; Expire
@@ -28,3 +28,7 @@ www2    IN      AAAA    fe80::d851:d9ff:fe56:8a36
 ns	IN	AAAA	fe80::d851:d9ff:fe56:8a36
 ns1	IN	AAAA	2001:6a8:2880:a020::fe
 ns2	IN	AAAA	2001:6a8:2880:a021::4
+
+foobar  IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonenu0ure        IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonepei5tu        IN      NS      ns.dries-yperman.sb.uclllabs.be.
