@@ -1,6 +1,10 @@
 options {
 	directory "/var/cache/bind";
 
+	recursion no;
+	querylog yes;
+	allow-transfer { none; };
+
 	forwarders {
                 8.8.8.8;
                 8.8.4.4;
