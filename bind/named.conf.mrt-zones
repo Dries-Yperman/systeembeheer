@@ -127,3 +127,8 @@ zone "subzonetie1ei.dries-yperman.sb.uclllabs.be" {
 	file "/etc/bind/mrt-zones/db.subzonetie1ei.dries-yperman.sb.uclllabs.be";
 };
 
+zone "subzoneaht3ca.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzoneaht3ca.dries-yperman.sb.uclllabs.be";
+};
+

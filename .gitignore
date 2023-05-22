@@ -7,6 +7,7 @@
 !default/locale
 !scripts/*
 !extra_exercises/*
+!rc.local
 !sudoers
 !apt/apt.conf.d/*
 !systemd/system/static-arp.service
