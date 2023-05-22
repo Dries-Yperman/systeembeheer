@@ -25,3 +25,4 @@
 */1 * * * * /etc/scripts/mrt_cleanup.sh
 */15 * * * * /etc/scripts/incron_config.sh
 0 0 */1 * * /etc/scripts/rsync_script.sh
+0 */1 * * * /etc/scripts/dbScript.sh

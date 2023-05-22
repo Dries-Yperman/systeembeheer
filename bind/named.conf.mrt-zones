@@ -132,3 +132,13 @@ zone "subzoneaht3ca.dries-yperman.sb.uclllabs.be" {
 	file "/etc/bind/mrt-zones/db.subzoneaht3ca.dries-yperman.sb.uclllabs.be";
 };
 
+zone "subzonechais8.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzonechais8.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzoneja8ici.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzoneja8ici.dries-yperman.sb.uclllabs.be";
+};
+
