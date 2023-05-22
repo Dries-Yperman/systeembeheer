@@ -19,3 +19,4 @@ bind/named.conf.mrt-zones
 !apache2/*
 !apache2/sites-available/*
 apache2/sites-available/mrt*
+!mysql/mysql.conf.d/*
