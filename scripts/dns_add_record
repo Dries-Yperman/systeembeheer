@@ -56,5 +56,5 @@ while getopts ":t:" opt; do
 done
 
 if ! $t_option_used; then
-	a_record
+	a_record "$1" "$2" "$3"
 fi
