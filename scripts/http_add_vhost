@@ -1,0 +1,9 @@
+#!/bin/bash
+
+FQDN=$1
+subzone="${FQDN%%.dries-yperman*}"
+subzoneExists=$(dig +short $subzone.dries-yperman.sb.uclllabs.be)
+
+if [ -n "$subzoneExists" ]; then
+	echo "exists!"
+fi
