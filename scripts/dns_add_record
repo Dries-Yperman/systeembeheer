@@ -1,0 +1,59 @@
+#!/bin/bash
+
+a_record() {
+	name=$3
+	address=$4
+	zone=$5
+	serial=$(cat /etc/bind/mrt-zones/db.foobar.dries-yperman.sb.uclllabs.be | grep -P 'Serial' | grep -oP '\d+')
+	nextSerial=$(($serial + 1))
+
+	# Add A record
+	echo "$name	IN	A	$address" >> /etc/bin/mrt-zones/db.zone;
+	sed -i "s
+}
+
+cname_record() {
+	echo "CNAME record"
+}
+
+mx_record() {
+	echo "MX record"
+}
+
+t_option_used=false
+while getopts ":t:" opt; do
+	case $opt in
+	t)
+		record_type=$OPTARG
+		t_option_used=true
+		case $record_type in
+
+			A)
+				a_record
+			;;
+
+			CNAME)
+				cname_record
+			;;
+
+			MX)
+				mx_record
+			;;
+
+			*)
+				echo "Invalid record type: $record_type"
+				exit 1
+			;;
+
+		esac
+	;;
+	\?)
+		echo "Invalid option: -$OPTARG"
+		exit 1
+	;;
+	esac
+done
+
+if ! $t_option_used; then
+	a_record
+fi
