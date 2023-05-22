@@ -3,7 +3,7 @@
 ;
 $TTL	300
 @	IN	SOA	ns.dries-yperman.sb.uclllabs.be. root.dries-yperman.sb.uclllabs.be. (
-			     40		; Serial
+			     43		; Serial
 			    300		; Refresh
 			    300		; Retry
 			    300		; Expire
@@ -50,3 +50,6 @@ subzonexic3du	IN      NS      ns.dries-yperman.sb.uclllabs.be.
 subzoneaa4rae	IN      NS      ns.dries-yperman.sb.uclllabs.be.
 subzoneoadu7o	IN      NS      ns.dries-yperman.sb.uclllabs.be.
 subzoneed5aib	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneyuo2ua	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneas4sei	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonetie1ei	IN      NS      ns.dries-yperman.sb.uclllabs.be.

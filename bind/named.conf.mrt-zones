@@ -112,3 +112,18 @@ zone "subzoneed5aib.dries-yperman.sb.uclllabs.be" {
 	file "/etc/bind/mrt-zones/db.subzoneed5aib.dries-yperman.sb.uclllabs.be";
 };
 
+zone "subzoneyuo2ua.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzoneyuo2ua.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzoneas4sei.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzoneas4sei.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzonetie1ei.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzonetie1ei.dries-yperman.sb.uclllabs.be";
+};
+
