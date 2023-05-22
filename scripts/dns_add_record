@@ -14,7 +14,15 @@ a_record() {
 }
 
 cname_record() {
-	echo "CNAME record"
+	alias=$1
+	zone=$2
+	serial=$(cat /etc/bind/mrt-zones/db.$zone | grep -P 'Serial' | grep -oP '\d+')
+        nextSerial=$(($serial + 1))
+
+	# Add CNAME record
+	echo "$alias	IN	CNAME	$zone." >> /etc/bind/mrt-zones/db.$zone;
+	sed -i "s/$serial\t\t;\sSerial/$nextSerial\t\t; Serial/" /etc/bind/mrt-zones/db.$zone
+	sudo systemctl restart named.service
 }
 
 mx_record() {
@@ -34,7 +42,8 @@ while getopts ":t:" opt; do
 			;;
 
 			CNAME)
-				cname_record
+				cname_record "$3" "$4"
+
 			;;
 
 			MX)
