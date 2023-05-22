@@ -107,3 +107,8 @@ zone "subzoneoadu7o.dries-yperman.sb.uclllabs.be" {
 	file "/etc/bind/mrt-zones/db.subzoneoadu7o.dries-yperman.sb.uclllabs.be";
 };
 
+zone "subzoneed5aib.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzoneed5aib.dries-yperman.sb.uclllabs.be";
+};
+

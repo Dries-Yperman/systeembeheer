@@ -26,7 +26,17 @@ cname_record() {
 }
 
 mx_record() {
-	echo "MX record"
+	mail=$1
+	address=$2
+	zone=$3
+	serial=$(cat /etc/bind/mrt-zones/db.$zone | grep -P 'Serial' | grep -oP '\d+')
+        nextSerial=$(($serial + 1))
+
+	# Add MX and A record
+	echo "@		IN	MX	10	$mail.$zone." >> /etc/bind/mrt-zones/db.$zone;
+	echo "$mail	IN	A	$address" >> /etc/bind/mrt-zones/db.$zone;
+	sed -i "s/$serial\t\t;\sSerial/$nextSerial\t\t; Serial/" /etc/bind/mrt-zones/db.$zone
+        sudo systemctl restart named.service
 }
 
 t_option_used=false
@@ -47,7 +57,7 @@ while getopts ":t:" opt; do
 			;;
 
 			MX)
-				mx_record
+				mx_record "$3" "$4" "$5"
 			;;
 
 			*)
