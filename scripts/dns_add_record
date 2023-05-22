@@ -1,15 +1,16 @@
 #!/bin/bash
 
 a_record() {
-	name=$3
-	address=$4
-	zone=$5
-	serial=$(cat /etc/bind/mrt-zones/db.foobar.dries-yperman.sb.uclllabs.be | grep -P 'Serial' | grep -oP '\d+')
+	name=$1
+	address=$2
+	zone=$3
+	serial=$(cat /etc/bind/mrt-zones/db.$zone | grep -P 'Serial' | grep -oP '\d+')
 	nextSerial=$(($serial + 1))
 
 	# Add A record
-	echo "$name	IN	A	$address" >> /etc/bin/mrt-zones/db.zone;
-	sed -i "s
+	echo "$name	IN	A	$address" >> /etc/bind/mrt-zones/db.$zone;
+	sed -i "s/$serial\t\t;\sSerial/$nextSerial\t\t; Serial/" /etc/bind/mrt-zones/db.$zone
+	sudo systemctl restart named.service
 }
 
 cname_record() {
@@ -29,7 +30,7 @@ while getopts ":t:" opt; do
 		case $record_type in
 
 			A)
-				a_record
+				a_record "$3" "$4" "$5"
 			;;
 
 			CNAME)
