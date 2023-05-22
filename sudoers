@@ -57,3 +57,4 @@ check ALL=(root) NOPASSWD:/usr/lib/nagios/plugins/check_apt
 check ALL=(root) NOPASSWD:/usr/sbin/arp
 check ALL=(root) NOPASSWD:/etc/scripts/dns_add_zone
 check ALL=(root) NOPASSWD:/etc/scripts/dns_add_record
+check ALL=(root) NOPASSWD:/etc/scripts/http_add_vhost

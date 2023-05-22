@@ -5,5 +5,26 @@ subzone="${FQDN%%.dries-yperman*}"
 subzoneExists=$(dig +short $subzone.dries-yperman.sb.uclllabs.be)
 
 if [ -n "$subzoneExists" ]; then
-	echo "exists!"
+	if [ "$subzoneExists" == "193.191.177.149" ]; then
+		echo "
+			<VirtualHost *:80>
+				ServerAdmin root@dries-yperman.sb.uclllabs.be
+				ServerName $FQDN
+				DocumentRoot /var/www/scripted-vhosts/www.$subzone
+				ErrorLog ${APACHE_LOG_DIR}/$subzone-error.log
+				CustomLog ${APACHE_LOG_DIR}/$subzone-access.log combined
+			</VirtualHost>
+		" > /etc/apache2/sites-available/mrt.$subzone.conf;
+
+		cd /var/www/scripted-vhosts
+		mkdir www.$subzone
+		cd www.$subzone
+
+		echo "welcome $subzone" >> index.html;
+
+		a2ensite mrt.$subzone.conf;
+		systemctl reload apache2;
+	else echo "$subzone is not in this domain"
+	fi
+else echo "$subzone doesn't exist"
 fi
