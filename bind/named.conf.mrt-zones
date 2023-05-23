@@ -142,3 +142,93 @@ zone "subzoneja8ici.dries-yperman.sb.uclllabs.be" {
 	file "/etc/bind/mrt-zones/db.subzoneja8ici.dries-yperman.sb.uclllabs.be";
 };
 
+zone "subzoneahphi7.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzoneahphi7.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzonepaidi6.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzonepaidi6.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzonexaiz9t.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzonexaiz9t.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzoneni3iez.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzoneni3iez.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzoneje6tai.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzoneje6tai.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzonehoo0tu.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzonehoo0tu.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzoneiphi5y.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzoneiphi5y.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzonemoom7s.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzonemoom7s.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzonephei8c.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzonephei8c.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzoneies8oh.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzoneies8oh.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzoneyoh4uy.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzoneyoh4uy.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzonedai4ch.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzonedai4ch.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzonegee5ku.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzonegee5ku.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzoneeip4qu.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzoneeip4qu.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzoneiu1she.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzoneiu1she.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzoneievo6m.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzoneievo6m.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzonecah0ae.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzonecah0ae.dries-yperman.sb.uclllabs.be";
+};
+
+zone "subzonequae1l.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzonequae1l.dries-yperman.sb.uclllabs.be";
+};
+

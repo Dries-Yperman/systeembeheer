@@ -3,7 +3,7 @@
 ;
 $TTL	300
 @	IN	SOA	ns.dries-yperman.sb.uclllabs.be. root.dries-yperman.sb.uclllabs.be. (
-			     46		; Serial
+			     65		; Serial
 			    300		; Refresh
 			    300		; Retry
 			    300		; Expire
@@ -14,6 +14,7 @@ $TTL	300
 	IN	NS	ns2.uclllabs.be.
 	IN	NS	ns.milo-claes.sb.uclllabs.be.
 ; A records
+@	IN      A       193.191.177.149
 www	IN	A	193.191.177.149
 www1	IN	A	193.191.177.149
 www2	IN	A	193.191.177.149
@@ -56,3 +57,21 @@ subzonetie1ei	IN      NS      ns.dries-yperman.sb.uclllabs.be.
 subzoneaht3ca	IN      NS      ns.dries-yperman.sb.uclllabs.be.
 subzonechais8	IN      NS      ns.dries-yperman.sb.uclllabs.be.
 subzoneja8ici	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneahphi7	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonepaidi6	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonexaiz9t	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneni3iez	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneje6tai	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonehoo0tu	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneiphi5y	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonemoom7s	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonephei8c	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneies8oh	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneyoh4uy	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonedai4ch	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonegee5ku	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneeip4qu	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneiu1she	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneievo6m	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonecah0ae	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonequae1l	IN      NS      ns.dries-yperman.sb.uclllabs.be.
