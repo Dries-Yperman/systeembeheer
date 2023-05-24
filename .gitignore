@@ -21,3 +21,4 @@ bind/named.conf.mrt-zones
 apache2/sites-available/mrt*
 !mysql/mysql.conf.d/*
 !systemd/network/*
+!postfix/*

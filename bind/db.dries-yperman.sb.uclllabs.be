@@ -3,7 +3,7 @@
 ;
 $TTL	300
 @	IN	SOA	ns.dries-yperman.sb.uclllabs.be. root.dries-yperman.sb.uclllabs.be. (
-			     66		; Serial
+			     95		; Serial
 			    300		; Refresh
 			    300		; Retry
 			    300		; Expire
@@ -76,3 +76,32 @@ subzoneiu1she	IN      NS      ns.dries-yperman.sb.uclllabs.be.
 subzoneievo6m	IN      NS      ns.dries-yperman.sb.uclllabs.be.
 subzonecah0ae	IN      NS      ns.dries-yperman.sb.uclllabs.be.
 subzonequae1l	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneohgi6o	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneux8uyu	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneyaang3	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneyoh8ma	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonena5woh	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonefah4ae	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneohk7ah	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonejiet1u	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneieyai8	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonephu3ah	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneais2fi	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonejah5ee	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonekohv8j	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneku0eob	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneeed1ae	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonebohsh9	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneieph7a	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneeequ0h	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonejeis8y	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonebai7oh	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonezoe1na	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneci0jie	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonesahp7u	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneoko1ro	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneei5xah	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonedoiph0	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonehoh7ee	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneto6iep	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzonevie3fi	IN      NS      ns.dries-yperman.sb.uclllabs.be.
