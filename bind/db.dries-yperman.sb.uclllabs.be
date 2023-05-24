@@ -3,7 +3,7 @@
 ;
 $TTL	300
 @	IN	SOA	ns.dries-yperman.sb.uclllabs.be. root.dries-yperman.sb.uclllabs.be. (
-			     96		; Serial
+			     97		; Serial
 			    300		; Refresh
 			    300		; Retry
 			    300		; Expire
@@ -13,9 +13,12 @@ $TTL	300
 	IN	NS	ns1.uclllabs.be.
 	IN	NS	ns2.uclllabs.be.
 	IN	NS	ns.milo-claes.sb.uclllabs.be.
+; mail server
+	IN	MX 10	mail.dries-yperman.sb.uclllabs.be
 ; A records
 @	IN      A       193.191.177.149
 www	IN	A	193.191.177.149
+mail	IN	A	192.191.177.149
 www1	IN	A	193.191.177.149
 www2	IN	A	193.191.177.149
 ns	IN	A	193.191.177.149
@@ -25,6 +28,7 @@ test	IN	A	193.191.177.254
 ; AAAA records
 @	IN	AAAA	2001:6a8:2880:a077::95
 www	IN	AAAA	2001:6a8:2880:a077::95
+mail	IN	AAAA	2001:6a8:2880:a077::95
 www1    IN      AAAA    2001:6a8:2880:a077::95
 www2    IN      AAAA    2001:6a8:2880:a077::95
 ns	IN	AAAA	2001:6a8:2880:a077::95
