@@ -3,7 +3,7 @@
 ;
 $TTL	300
 @	IN	SOA	ns.dries-yperman.sb.uclllabs.be. root.dries-yperman.sb.uclllabs.be. (
-			    121		; Serial
+			    124		; Serial
 			    300		; Refresh
 			    300		; Retry
 			    300		; Expire
@@ -28,12 +28,14 @@ test	IN	A	193.191.177.254
 ; AAAA records
 @	IN	AAAA	2001:6a8:2880:a077::95
 www	IN	AAAA	2001:6a8:2880:a077::95
-mail	IN	AAAA	2001:6a8:2880:a077::95
+mx	IN	AAAA	2001:6a8:2880:a077::95
 www1    IN      AAAA    2001:6a8:2880:a077::95
 www2    IN      AAAA    2001:6a8:2880:a077::95
 ns	IN	AAAA	2001:6a8:2880:a077::95
 ns1	IN	AAAA	2001:6a8:2880:a020::fe
 ns2	IN	AAAA	2001:6a8:2880:a021::4
+secure          IN      AAAA    2001:6a8:2880:a077::95
+supersecure     IN      AAAA    2001:6a8:2880:a077::95
 
 foobar  IN      NS      ns.dries-yperman.sb.uclllabs.be.
 subzonenu0ure        IN      NS      ns.dries-yperman.sb.uclllabs.be.
@@ -133,3 +135,4 @@ subzonechohy8	IN      NS      ns.dries-yperman.sb.uclllabs.be.
 subzoneahc4pu	IN      NS      ns.dries-yperman.sb.uclllabs.be.
 subzonepiv1ie	IN      NS      ns.dries-yperman.sb.uclllabs.be.
 subzoneneiy5o	IN      NS      ns.dries-yperman.sb.uclllabs.be.
+subzoneohnei0	IN      NS      ns.dries-yperman.sb.uclllabs.be.
