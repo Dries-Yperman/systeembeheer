@@ -492,3 +492,8 @@ zone "subzonepiv1ie.dries-yperman.sb.uclllabs.be" {
 	file "/etc/bind/mrt-zones/db.subzonepiv1ie.dries-yperman.sb.uclllabs.be";
 };
 
+zone "subzoneneiy5o.dries-yperman.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/mrt-zones/db.subzoneneiy5o.dries-yperman.sb.uclllabs.be";
+};
+
