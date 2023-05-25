@@ -26,3 +26,4 @@ apache2/sites-available/mrt*
 !mailname
 !iptables/*
 !init.d/firewall
+!ethers

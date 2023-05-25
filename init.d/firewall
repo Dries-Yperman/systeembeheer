@@ -1,13 +1,13 @@
 #!/bin/bash
 
 stop() {
-        iptables-restore /etc/iptables/Stop.v4
-        ip6tables-restore /etc/iptables/Stop.v6
+        iptables-restore /etc/iptables/stop.ipv4
+        ip6tables-restore /etc/iptables/stop.ipv6
 }
 
 start() {
-        iptables-restore /etc/iptables/Start.v4
-        ip6tables-restore /etc/iptables/Start.v6
+        iptables-restore /etc/iptables/start.ipv4
+        ip6tables-restore /etc/iptables/start.ipv6
 
         sysctl -w net.ipv4.ip_forward=0
         sysctl -w net.ipv6.conf.all.forwarding=0
