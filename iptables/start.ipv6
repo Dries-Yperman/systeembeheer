@@ -1,0 +1,16 @@
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT ACCEPT [0:0]
+:sshguard - [0:0]
+-A INPUT -j sshguard
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -s 2001:6a8:2880:a021::6/128 -j ACCEPT
+-A INPUT -s 2001:6a8:2880:a021::1/128 -j ACCEPT
+-A INPUT -p udp -m udp --dport 53 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 53 -j ACCEPT
+-A INPUT -p tcp -m multiport --dports 25,80,443,587,993,22345 -j ACCEPT
+-A INPUT -p icmpv6 -m icmpv6 --icmpv6-type 128 -j ACCEPT
+-A INPUT -p icmpv6 -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+COMMIT
