@@ -24,3 +24,5 @@ apache2/sites-available/mrt*
 !postfix/*
 !dovecot/*
 !mailname
+!iptables/*
+!init.d/firewall
