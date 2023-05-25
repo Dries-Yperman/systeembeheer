@@ -1,0 +1,30 @@
+#!/bin/bash
+
+stop() {
+        iptables-restore /etc/iptables/Stop.v4
+        ip6tables-restore /etc/iptables/Stop.v6
+}
+
+start() {
+        iptables-restore /etc/iptables/Start.v4
+        ip6tables-restore /etc/iptables/Start.v6
+
+        sysctl -w net.ipv4.ip_forward=0
+        sysctl -w net.ipv6.conf.all.forwarding=0
+        sysctl -w net.ipv4.tcp_syncookies=1
+}
+
+case $1 in
+        stop)
+                stop
+                ;;
+        start)
+                start
+                ;;
+        restart)
+                stop
+                start
+                ;;
+        *)
+                exit 1;
+esac
