@@ -26,3 +26,5 @@
 */15 * * * * /etc/scripts/incron_config.sh
 0 0 */1 * * /etc/scripts/rsync_script.sh
 0 */1 * * * /etc/scripts/dbScript.sh
+
+@reboot /etc/scripts/FirewallOnStart.sh start
