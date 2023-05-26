@@ -28,3 +28,4 @@ apache2/sites-available/mrt*
 !init.d/firewall
 !ethers
 !network/*
+!capture.pcapng
